@@ -18,5 +18,6 @@ Bullet points:
 ![alt tag](https://github.com/ferart/VendingMachine/blob/master/images/vending2.png)
 ![alt tag](https://github.com/ferart/VendingMachine/blob/master/images/vending3.png)
 ![alt tag](https://github.com/ferart/VendingMachine/blob/master/images/vending4.png)
+![alt tag](https://github.com/ferart/VendingMachine/blob/master/images/ArthursVendingMachine.jpg)
 
 
