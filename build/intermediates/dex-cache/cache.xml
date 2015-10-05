@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="22886d910315028a2b34b1ba068c265534ade87a">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\classes-aeb8fd38cfddabfb5458c52a907ef97a05471c1c.jar" />
+    </item>
+    <item
+        jar="C:\Windows.old\Users\Fernando\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-1ae4461ac7d9775e9050042f88973d7bbf52e035.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.0\da7ba0ee1d30edd955da276cdf01d3d7cb24aedc\dagger-2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="da7ba0ee1d30edd955da276cdf01d3d7cb24aedc">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\dagger-2.0-4541270f5516d4996976331813d9a60fe5839fde.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-cd14e4e759bdfdb30667aaef375acc85fbad87cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\classes-2c164c3da4d8bb6a087c34fbaed17b7d52ca838b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\.gradle\caches\modules-2\files-2.1\com.jakewharton.timber\timber\2.7.1\8fa5f11686c7a44386b41a6890e655cf2b7d5e70\timber-2.7.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8fa5f11686c7a44386b41a6890e655cf2b7d5e70">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\timber-2.7.1-4d7650fadf37db0ca9fc7b5a3afae82776563751.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-bb9d477dc1e3b9ad91246b9812516f2520033369.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\javax.inject-1-774d49f3970a6c35eb47c7f73a50e22f798cc7d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Fernando\Documents\software\VendingMachine\app\build\intermediates\pre-dexed\debug\classes-1788f87077d35085c7c3ac8a98631a51e8c022ff.jar" />
+    </item>
+
+</items>
