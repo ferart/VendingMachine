@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="arthur.mobileapps.com.vendingmachine.ui.views.VendingActivity">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_exit" android:title="@string/exit"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_money"
+        android:title="@string/action_money"
+        app:showAsAction="never" >
+        <menu>
+            <group android:id="@+id/group_money">
+                <item android:title="@string/str_cent5"
+                    android:id="@+id/cent5"/>
+                <item
+                    android:title="@string/str_cent25"
+                    android:id="@+id/cent25" />
+                <item
+                    android:title="@string/str_dolar1"
+                    android:id="@+id/dolar1" />
+                <item
+                    android:title="@string/str_dolar2"
+                    android:id="@+id/dolar2" />
+                <item
+                    android:title="@string/str_dolar5"
+                    android:id="@+id/dolar5" />
+            </group>
+        </menu>
+    </item>
+</menu>
