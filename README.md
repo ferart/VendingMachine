@@ -4,8 +4,6 @@ VendingMachine
 The project use the Model view presenter design pattern, it binds views with Butterknife framework, also it does dependency injection (Dagger 2 framework).
 it has a splashScreen (a cinemagraph using a custom view), Activities, Dialog Fragments, Cards views.
 
-i think it's an easy example with a good architecture and the use of popular frameworks.
-
 Bullet points:
 
     Good architecture.
