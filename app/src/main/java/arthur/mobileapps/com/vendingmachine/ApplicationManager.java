@@ -5,6 +5,7 @@ import android.app.Application;
 import arthur.mobileapps.com.vendingmachine.business.BusinessComponent;
 import arthur.mobileapps.com.vendingmachine.business.DaggerBusinessComponent;
 import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.BusinessModule;
+import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.NetworkOperationsExt;
 import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.VendingManagerImpl;
 import arthur.mobileapps.com.vendingmachine.ui.DaggerUIComponent;
 import arthur.mobileapps.com.vendingmachine.ui.UIComponent;
@@ -34,8 +35,8 @@ public class ApplicationManager extends Application {
             Timber.plant(new Timber.DebugTree());
         }
         //creates the components for the presenters and business
-        uiComponent= DaggerUIComponent.builder().presenterModule(new PresenterModule(this,new VendingManagerImpl())).build();
-        businessComponent= DaggerBusinessComponent.builder().businessModule(new BusinessModule()).build();
+        uiComponent= DaggerUIComponent.builder().presenterModule(new PresenterModule(this,new VendingManagerImpl(),new NetworkOperationsExt(this))).build();
+        businessComponent= DaggerBusinessComponent.builder().businessModule(new BusinessModule(this)).build();
 
 
     }

@@ -6,6 +6,7 @@ import arthur.mobileapps.com.vendingmachine.ApplicationManager;
 import arthur.mobileapps.com.vendingmachine.SplashActivity;
 import arthur.mobileapps.com.vendingmachine.ui.presenter.PresenterModule;
 import arthur.mobileapps.com.vendingmachine.ui.presenter.SplashPresenter;
+import arthur.mobileapps.com.vendingmachine.ui.views.ScreenSlideActivity;
 import arthur.mobileapps.com.vendingmachine.ui.views.VendingActivity;
 import dagger.Component;
 
@@ -19,5 +20,6 @@ public interface UIComponent {
     void inject(ApplicationManager applicationManager);
     void inject(SplashActivity splashActivity);
     void inject(VendingActivity vendingActivity);
+    void inject(ScreenSlideActivity screenSlideActivity);
     //SplashPresenter injectSplashPresenter();
 }

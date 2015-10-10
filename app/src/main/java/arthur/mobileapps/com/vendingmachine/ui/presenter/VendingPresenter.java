@@ -38,5 +38,12 @@ public interface VendingPresenter {
      * balance of the user
      * @return
      */
+
     float getMoneyToSpend();
+
+    /**
+     * opens the Slides with wiewPager
+     * @param context
+     */
+    void openSlide(Context context);
 }

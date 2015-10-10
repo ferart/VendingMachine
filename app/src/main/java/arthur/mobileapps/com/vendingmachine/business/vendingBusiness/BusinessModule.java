@@ -1,5 +1,7 @@
 package arthur.mobileapps.com.vendingmachine.business.vendingBusiness;
 
+import android.content.Context;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -13,7 +15,9 @@ import dagger.Provides;
 @Module
 public class BusinessModule {
 
-    public BusinessModule() {
+    private Context context;
+    public BusinessModule(Context context) {
+        this.context=context;
     }
 
     /**
@@ -24,5 +28,11 @@ public class BusinessModule {
     @Singleton
     VendingManager provideVendingManager(){
         return new VendingManagerImpl();
+    }
+
+    @Provides
+    @Singleton
+    NetworkOperations provideNetworkOperations(){
+        return new NetworkOperationsExt(context);
     }
 }

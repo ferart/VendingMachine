@@ -1,9 +1,12 @@
 package arthur.mobileapps.com.vendingmachine.ui.presenter;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 
+import arthur.mobileapps.com.vendingmachine.R;
 import arthur.mobileapps.com.vendingmachine.SplashActivity;
 import arthur.mobileapps.com.vendingmachine.ui.views.VendingActivity;
 
@@ -29,6 +32,13 @@ public class SplashPresenterImpl implements SplashPresenter {
                 /* Create an Intent that will start the Vending-Activity. */
                 Intent mainIntent = new Intent(activityContext,VendingActivity.class);
                 activityContext.startActivity(mainIntent);
+                if (activityContext instanceof SplashActivity){
+                    ((SplashActivity)activityContext).overridePendingTransition(R.anim.right_entrance,R.anim.left_out);
+                    AnimatorSet animator=(AnimatorSet) AnimatorInflater.loadAnimator(activityContext, R.animator.alpha_changing);
+                    animator.setTarget(activityContext);
+                    animator.start();
+
+                }
             }
         }, SPLASH_DISPLAY_LENGTH);
     }

@@ -1,6 +1,7 @@
 package arthur.mobileapps.com.vendingmachine.ui.presenter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import javax.inject.Inject;
 import arthur.mobileapps.com.vendingmachine.R;
 import arthur.mobileapps.com.vendingmachine.beans.ProductBean;
 import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.VendingManager;
+import arthur.mobileapps.com.vendingmachine.ui.views.ScreenSlideActivity;
 import arthur.mobileapps.com.vendingmachine.ui.views.SellProductDialog;
 import arthur.mobileapps.com.vendingmachine.ui.views.VendingActivity;
 
@@ -94,5 +96,15 @@ public class VendingPresenterImpl implements VendingPresenter {
     @Override
     public float getMoneyToSpend() {
         return vendingManager.getTotalMoney();
+    }
+
+    @Override
+    public void openSlide(Context context) {
+
+        if (context instanceof VendingActivity){
+            Intent openActivityIntent= new Intent(context,ScreenSlideActivity.class);
+            ((VendingActivity) context).startActivity(openActivityIntent);
+        }
+
     }
 }

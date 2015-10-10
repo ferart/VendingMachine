@@ -6,6 +6,7 @@ import android.content.Context;
 import javax.inject.Singleton;
 
 import arthur.mobileapps.com.vendingmachine.ApplicationManager;
+import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.NetworkOperations;
 import arthur.mobileapps.com.vendingmachine.business.vendingBusiness.VendingManager;
 import dagger.Module;
 import dagger.Provides;
@@ -20,10 +21,12 @@ public class PresenterModule {
 
     private Application context;            //custom Application
     private VendingManager vendingManager;  //dependency needed
+    private NetworkOperations networkOperations;
 
-    public PresenterModule(Context Context,VendingManager vendingManager) {
+    public PresenterModule(Context Context,VendingManager vendingManager,NetworkOperations networkOperations) {
         this.context = context;
         this.vendingManager=vendingManager;
+        this.networkOperations=networkOperations;
     }
 
     /**
@@ -40,5 +43,9 @@ public class PresenterModule {
      */
     @Provides @Singleton VendingPresenter provideVendingPresenter(){
         return new VendingPresenterImpl(vendingManager);
+    }
+
+    @Provides @Singleton FeedsPresenter provideFeedsPresenter(){
+        return  new FeedsPresenterImpl(networkOperations);
     }
 }

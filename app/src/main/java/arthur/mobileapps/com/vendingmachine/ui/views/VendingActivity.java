@@ -1,5 +1,8 @@
 package arthur.mobileapps.com.vendingmachine.ui.views;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageInfo;
@@ -16,6 +19,7 @@ import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
@@ -73,6 +77,20 @@ public class VendingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vending);
+
+       /* AnimatorSet animator=(AnimatorSet) AnimatorInflater.loadAnimator(this,R.animator.alpha_changing);
+        animator.setTarget(this);
+        animator.start();
+        */
+        final ViewGroup viewGroup = (ViewGroup) ((ViewGroup) this
+                .findViewById(android.R.id.content)).getChildAt(0);
+
+        ObjectAnimator anim = ObjectAnimator.ofFloat(viewGroup,"alpha",0.0f,1f);
+        //anim.setRepeatCount(1);
+        anim.setDuration(800); // duration 3 seconds
+        anim.start();
+
+
     }
 
     @Override
@@ -286,7 +304,8 @@ public class VendingActivity extends AppCompatActivity {
 
     @OnClick({R.id.vending_conf_TV, R.id.vending_icon})
     public void clickStock(){
-        mDrawerLayout.openDrawer(mDrawerList);
+
+        vendingPresenter.openSlide(VendingActivity.this);
     }
 
     /**
